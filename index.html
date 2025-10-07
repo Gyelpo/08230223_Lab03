@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tshering Gyelpo | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- ===== HEADER & DARK MODE ===== -->
+  <header>
+    <h1 class="logo">Tshering Gyelpo</h1>
+    <button id="modeToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+  </header>
+
+  <!-- ===== HERO / HOME ===== -->
+  <section id="intro" class="hero-section active">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <img src="profile.jpg" alt="Tshering Gyelpo" class="profile-pic" />
+        <h2 id="greeting"></h2>
+        <h1>Hello!! I’m <span>Tshering Gyelpo</span></h1>
+        <p class="tagline">"Designing simple solutions for complex problems"</p>
+
+        <div class="icon-menu">
+          <div class="icon-item" data-target="about"><i class="fas fa-user"></i><p>About</p></div>
+          <div class="icon-item" data-target="education"><i class="fas fa-graduation-cap"></i><p>Education</p></div>
+          <div class="icon-item" data-target="skills"><i class="fas fa-lightbulb"></i><p>Skills</p></div>
+          <div class="icon-item" data-target="projects"><i class="fas fa-folder-open"></i><p>Projects</p></div>
+          <div class="icon-item" data-target="contact"><i class="fas fa-envelope"></i><p>Contact</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OTHER SECTIONS ===== -->
+  <section id="about" class="section hidden fade-section">
+    <h2>👤 About Me</h2>
+    <div class="about-content">
+      <img src="photo.jpg" alt="Tshering Gyelpo" class="about-pic" />
+      <p>
+        Hello! My name is Tshering Gyelpo and I am an enthusiastic ICT student pursuing my bachelor's degree in IT
+        at Samtse College of Education. I enjoy learning new things, building user-friendly websites, and creating
+        applications that make a real impact. My goal is to become a developer contributing to innovative projects.
+      </p>
+    </div>
+  </section>
+
+<section id="education" class="section hidden fade-section">
+  <h2>🎓 Education</h2>
+  <div class="education-grid">
+    <div class="edu-card">
+      <img src="college.jpg" alt="Samtse College of Education" class="edu-pic" />
+      <p>
+        <strong>Bachelor's Degree in Information and Communication Technology (ICT)</strong>  
+        <br> <em>Samtse College of Education, 2025 – Present</em>  
+        <br><br>
+        I am currently pursuing a Bachelor’s degree in ICT at Samtse College of Education, one of the Royal University of Bhutan’s leading institutes for teacher education.  
+        This program has strengthened my understanding of computing concepts, web development, programming, and educational technology.  
+        It has also allowed me to apply ICT knowledge in real-world contexts, combining technical expertise with effective teaching and communication skills.
+      </p>
+    </div>
+
+    <div class="edu-card">
+      <img src="school.jpg" alt="Bartsham Higher Secondary School" class="edu-pic" />
+      <p>
+        <strong>Higher Secondary Education (Science Stream)</strong>  
+        <br> <em>Bartsham Higher Secondary School, 2020 – 2022</em>  
+        <br><br>
+        I completed my Higher Secondary education with a focus on Science.  
+        During this time, I developed a strong foundation in logical reasoning, problem-solving, and analytical thinking, which later helped me transition into ICT.  
+        Participating in school ICT clubs and technology exhibitions sparked my passion for coding and digital innovation.
+      </p>
+    </div>
+
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section hidden fade-section">
+  <h2>💡 Skills</h2>
+
+  <h3>Technical Skills</h3>
+  <ul class="technical-skills">
+    <li>
+      <strong>HTML & CSS:</strong> Skilled in creating structured, visually appealing, and fully responsive web pages using HTML and CSS. I can design layouts, manage styles, and ensure accessibility across devices.
+    </li>
+    <li>
+      <strong>JavaScript (Basic Level):</strong> Able to enhance web interactivity using JavaScript. I can manipulate the DOM, handle user events, and create dynamic web experiences that improve usability.
+    </li>
+    <li>
+     
+      <strong>Python Programming:</strong> Familiar with writing simple scripts and programs in Python. I use it for logical problem-solving, data handling, and automation of small tasks.
+    </li>
+    <li>
+      <strong>Version Control (Git & GitHub):</strong> Experienced in maintaining projects using GitHub. I can initialize repositories, commit changes, and collaborate on group projects effectively.
+    </li>
+  </ul>
+
+  <h3>Soft Skills</h3>
+  <ul>
+    <li>
+      <strong>Communication:</strong> Able to explain complex technical concepts in simple terms and collaborate clearly with peers and instructors.
+    </li>
+    <li>
+      <strong>Teamwork:</strong> Work effectively in group projects by sharing ideas, dividing tasks efficiently, and helping teammates when needed.
+    </li>
+    <li>
+      <strong>Time Management:</strong> Plan and complete academic and project tasks within deadlines by prioritizing goals and maintaining focus.
+    </li>
+    <li>
+      <strong>Adaptability & Willingness to Learn:</strong> Open to learning new tools, programming languages, and technologies to stay up-to-date with modern trends.
+    </li>
+  </ul>
+</section>
+
+  <section id="projects" class="section hidden fade-section">
+    <h2>📂 Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>GitHub Portfolio Deployment</h3>
+        <p>
+          Demonstrates deploying a personal portfolio on GitHub Pages — learning version control,
+          repository management and professional showcasing online.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section hidden fade-section">
+    <h2>✉️ Contact Me</h2>
+    <p>Email: <a href="mailto:gyelpotshering645@gmail.com">gyelpotshering645@gmail.com</a></p>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/19TmYzKHCy/" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer><p>© 2025 Tshering Gyelpo. All Rights Reserved.</p></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

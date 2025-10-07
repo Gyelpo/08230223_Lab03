@@ -1,0 +1,87 @@
+/* ==== BASE ==== */
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Arial, sans-serif;
+  line-height:1.6;
+  background:#fafafa;
+  color:#333;
+  transition:background .4s,color .4s;
+}
+.dark-mode{background:#121212;color:#e0e0e0}
+
+/* ==== HEADER ==== */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#222;
+  color:#fff;
+  padding:.8rem 1rem;
+  position:sticky;top:0;z-index:1000;
+}
+.logo{font-size:1.3rem}
+#modeToggle{
+  background:none;border:none;color:#fff;font-size:1.3rem;cursor:pointer;
+  transition:color .3s;
+}
+#modeToggle:hover{color:#ff9800}
+
+/* ==== HERO ==== */
+.hero-section{
+  height:100vh;
+  display:flex;justify-content:center;align-items:center;
+  background:url('images/background.jpg') center/cover no-repeat;
+  position:relative;text-align:center;color:#fff;
+}
+.hero-overlay{
+  background:rgba(0,0,0,.6);
+  position:absolute;inset:0;display:flex;justify-content:center;align-items:center;
+}
+.hero-content{z-index:1}
+.profile-pic{
+  width:150px;height:150px;border-radius:50%;object-fit:cover;
+  border:3px solid #fff;margin-bottom:15px;
+}
+.hero-content span{color:#ff9800}
+.icon-menu{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:25px;margin-top:25px;
+}
+.icon-item{
+  width:90px;height:90px;border-radius:50%;background:#fff;color:#222;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-size:28px;cursor:pointer;transition:transform .3s,background .3s;
+}
+.icon-item:hover{transform:scale(1.1);background:#ff9800;color:#fff}
+.icon-item p{font-size:.8rem;margin-top:5px}
+
+/* ==== SECTIONS ==== */
+.section{
+  max-width:900px;margin:50px auto;padding:40px 20px;background:#fff;border-radius:10px;
+}
+.hidden{display:none}
+.fade-section{opacity:0;transform:translateY(30px);transition:all .6s ease-out}
+.fade-section.show{opacity:1;transform:translateY(0)}
+
+/* ==== FORMS ==== */
+form{display:flex;flex-direction:column;max-width:400px;margin:auto}
+input,textarea,button{
+  margin:8px 0;padding:10px;border-radius:6px;border:1px solid #ccc
+}
+button{background:#222;color:#fff;cursor:pointer;transition:background .3s}
+button:hover{background:#ff9800}
+
+/* ==== FOOTER ==== */
+footer{text-align:center;background:#222;color:#fff;padding:10px;border-radius:8px}
+
+/* ==== DARK MODE VARIANTS ==== */
+.dark-mode header{background:#1f1f1f}
+.dark-mode .section{background:#1f1f1f}
+.dark-mode .icon-item{background:#333;color:#fff}
+.dark-mode .icon-item:hover{background:#ff9800;color:#fff}
+.dark-mode footer{background:#1f1f1f}
+
+/* ==== RESPONSIVE ==== */
+@media(max-width:600px){
+  .icon-item{width:70px;height:70px;font-size:22px}
+  .icon-item p{font-size:.7rem}
+}
